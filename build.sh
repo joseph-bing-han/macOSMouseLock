@@ -1,20 +1,26 @@
-#!/bin/sh
+#!/bin/bash
+
+# Build script to compile mouselock in Release mode and copy to ./bin directory
+
 set -e
 
-# get version tag or commit id
-VERSION=$(git describe HEAD)
+echo "Building MouseLock in Release mode..."
+xcodebuild -scheme MouseLock -configuration Release clean build
 
-# set app version
-agvtool new-version ${VERSION:1}
+echo "Copying built app to ./bin directory..."
+rm -rf bin/MouseLock.app
+mkdir -p bin
 
-# build
-xcodebuild -quiet -configuration Release -target Mouselock
+# Find the built app and copy it
+BUILT_APP="$(find ~/Library/Developer/Xcode/DerivedData -name "MouseLock.app" -path "*Release*" -type d 2>/dev/null | head -1)"
 
-# clean dist
-rm -rf dist && mkdir dist
+if [ -z "$BUILT_APP" ]; then
+    echo "Error: Could not find built MouseLock.app"
+    exit 1
+fi
 
-# make dmg from app
-hdiutil create -fs HFS+ -srcfolder build/Release/Mouselock.app -volname Mouselock dist/Mouselock.dmg
+echo "Source: $BUILT_APP"
+cp -r "$BUILT_APP" bin/
 
-# clean build
-rm -r build
+echo "Done! Release app is available at: ./bin/MouseLock.app"
+ls -lh bin/MouseLock.app/Contents/MacOS/MouseLock

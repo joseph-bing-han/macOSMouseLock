@@ -1,4 +1,4 @@
-project.xcworkspace
-xcuserdata
-build
-dist
+/dist/
+/bin/
+.DS_Store
+**/.DS_Store
