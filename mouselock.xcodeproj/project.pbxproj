@@ -53,9 +53,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6328BA542DB75A5C00A9BC0F /* mouselock */ = {
+		6328BA542DB75A5C00A9BC0F /* MouseLock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6328BA642DB75A5D00A9BC0F /* Build configuration list for PBXNativeTarget "mouselock" */;
+			buildConfigurationList = 6328BA642DB75A5D00A9BC0F /* Build configuration list for PBXNativeTarget "MouseLock" */;
 			buildPhases = (
 				6328BA512DB75A5C00A9BC0F /* Sources */,
 				6328BA522DB75A5C00A9BC0F /* Frameworks */,
@@ -108,7 +108,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6328BA542DB75A5C00A9BC0F /* mouselock */,
+				6328BA542DB75A5C00A9BC0F /* MouseLock */,
 			);
 		};
 /* End PBXProject section */
@@ -263,11 +263,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = mouselock/mouselock.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"mouselock/Preview Content\"";
 				ENABLE_APP_SANDBOX = YES;
@@ -281,7 +282,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MouseLock.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -294,11 +295,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = mouselock/mouselock.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"mouselock/Preview Content\"";
 				ENABLE_APP_SANDBOX = YES;
@@ -312,7 +314,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MouseLock.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -332,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6328BA642DB75A5D00A9BC0F /* Build configuration list for PBXNativeTarget "mouselock" */ = {
+		6328BA642DB75A5D00A9BC0F /* Build configuration list for PBXNativeTarget "MouseLock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6328BA652DB75A5D00A9BC0F /* Debug */,

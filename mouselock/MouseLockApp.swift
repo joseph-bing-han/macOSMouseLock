@@ -23,7 +23,7 @@ struct MouseLockMenuView: View {
         VStack(alignment: .leading, spacing: 10) {
             // 锁定开关
             Toggle("启用鼠标锁定", isOn: $delegate.isLocking)
-                .onChange(of: delegate.isLocking) { newValue in
+                .onChange(of: delegate.isLocking) { oldValue, newValue in
                     if newValue {
                         delegate.startLocking()
                     } else {
